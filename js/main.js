@@ -16,18 +16,23 @@
   onScroll();
   if (toTop) toTop.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
 
-  // Mobile menu
+  // Mobile menu (full-screen overlay)
   var toggle = document.querySelector(".menu-toggle");
   var nav = document.querySelector(".nav");
+  function setMenu(open) {
+    nav.classList.toggle("open", open);
+    document.body.classList.toggle("menu-open", open);
+    toggle.setAttribute("aria-expanded", open);
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    toggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  }
   if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open);
-      toggle.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-    });
+    toggle.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
     nav.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () { nav.classList.remove("open"); });
+      a.addEventListener("click", function () { setMenu(false); });
     });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    window.addEventListener("resize", function () { if (window.innerWidth > 960) setMenu(false); });
   }
 
   // Reveal-on-scroll
