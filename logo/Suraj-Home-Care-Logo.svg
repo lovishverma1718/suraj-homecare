@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Suraj Home Care logo">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDC830"/>
+      <stop offset="1" stop-color="#F37335"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B8BEB"/>
+      <stop offset="1" stop-color="#1A3F8F"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1A3F8F"/>
+      <stop offset="1" stop-color="#2F6FD1"/>
+    </linearGradient>
+    <clipPath id="aboveRoof">
+      <polygon points="0,-30 240,-30 240,126 120,44 0,126"/>
+    </clipPath>
+  </defs>
+  <rect width="400" height="400" fill="#ffffff"/>
+  <g transform="translate(80 48)">
+    <g clip-path="url(#aboveRoof)">
+      <circle cx="120" cy="74" r="52" fill="url(#sun)"/>
+      <g stroke="url(#sun)" stroke-width="11" stroke-linecap="round">
+        <line x1="120" y1="10" x2="120" y2="-10" stroke="#FCB52C"/>
+        <line x1="152" y1="18" x2="162" y2="1"/>
+        <line x1="88"  y1="18" x2="78"  y2="1"/>
+        <line x1="175" y1="42" x2="192" y2="32"/>
+        <line x1="65"  y1="42" x2="48"  y2="32"/>
+        <line x1="184" y1="69" x2="204" y2="67"/>
+        <line x1="56"  y1="69" x2="36"  y2="67"/>
+      </g>
+    </g>
+    <polyline points="22,136 120,58 218,136" fill="none" stroke="url(#blue)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 196 V128 L120 84 L178 128 V196" fill="none" stroke="url(#blue)" stroke-width="13" stroke-linejoin="round"/>
+    <g fill="#1F4E9E">
+      <rect x="107" y="112" width="11" height="11" rx="1.5"/>
+      <rect x="122" y="112" width="11" height="11" rx="1.5"/>
+      <rect x="107" y="127" width="11" height="11" rx="1.5"/>
+      <rect x="122" y="127" width="11" height="11" rx="1.5"/>
+    </g>
+    <path d="M110 196 V164 a10 10 0 0 1 20 0 V196 Z" fill="#1F4E9E"/>
+  </g>
+  <text x="200" y="314" text-anchor="middle" font-family="'Montserrat','Poppins','Segoe UI',Arial,sans-serif" font-weight="800" font-size="62" letter-spacing="6" fill="url(#text)">SURAJ</text>
+  <text x="200" y="360" text-anchor="middle" font-family="'Montserrat','Poppins','Segoe UI',Arial,sans-serif" font-weight="500" font-size="27" letter-spacing="9" fill="#1F4E9E">HOME CARE</text>
+</svg>

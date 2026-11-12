@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Suraj Home Care Ltd.</title>
+  <meta name="description" content="Contact Suraj Home Care Ltd. in Edmonton, Alberta. Call 780-813-2777 or book a free in-home care consultation.">
+  <meta name="theme-color" content="#1F4E9E">
+  <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <a href="tel:+17808132777"><i class="fa-solid fa-phone"></i> 780-813-2777</a>
+      <a href="mailto:info@surajhomecare.ca"><i class="fa-solid fa-envelope"></i> info@surajhomecare.ca</a>
+      <span class="topbar-hide"><i class="fa-solid fa-location-dot"></i> Serving Edmonton &amp; all of Alberta</span>
+    </div>
+    <div class="topbar-info topbar-hide">
+      <span><i class="fa-regular fa-clock"></i> Care available 24/7</span>
+      <a href="https://www.tiktok.com/@surajhomecare" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="Suraj Home Care - Home">
+      <img src="images/logo-icon.svg" alt="Suraj Home Care logo">
+      <span class="brand-text"><strong>SURAJ</strong><small>HOME CARE</small></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html#consult" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Free Consultation</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="hero-bg" style="background-image:url('images/contact-bench.jpg')"></div>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have a question or ready to arrange care? Our team is here to help — reach out today.</p>
+    <div class="crumbs"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+  </div>
+</section>
+
+<section class="section" id="consult" style="scroll-margin-top:90px">
+  <div class="container contact-grid">
+    <div class="info-card reveal">
+      <h3>Get in touch</h3>
+      <p>Call us anytime or send a message — we'll respond as quickly as possible.</p>
+      <div class="info-item"><i class="fa-solid fa-phone"></i><div><small>Call Us</small><a href="tel:+17808132777">780-813-2777</a></div></div>
+      <div class="info-item"><i class="fa-solid fa-envelope"></i><div><small>Email Us</small><a href="mailto:info@surajhomecare.ca">info@surajhomecare.ca</a></div></div>
+      <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><small>Office</small><span>3758 Weidle Cres SW<br>Edmonton, AB</span></div></div>
+      <div class="info-item"><i class="fa-regular fa-clock"></i><div><small>Availability</small><span>Care available 24/7</span></div></div>
+      <div class="info-item"><i class="fa-brands fa-tiktok"></i><div><small>Follow Us</small><a href="https://www.tiktok.com/@surajhomecare" target="_blank" rel="noopener">TikTok</a></div></div>
+    </div>
+    <div class="form-card reveal">
+      <span class="eyebrow">Free Consultation</span>
+      <h2 style="font-size:2rem">Request care or ask a question</h2>
+      <form data-mailto data-subject="Care Enquiry">
+        <div class="form-grid">
+          <div class="field"><label for="c-name">Your Name <span class="req-star">*</span></label><input id="c-name" name="name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="c-phone">Phone Number <span class="req-star">*</span></label><input id="c-phone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="field"><label for="c-email">Email Address</label><input id="c-email" name="email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="c-city">City / Area</label><input id="c-city" name="city" type="text" placeholder="e.g. Edmonton"></div>
+          <div class="field"><label for="c-svc">Service Needed</label><select id="c-svc" name="service"><option>Not sure yet</option><option>Personal Care &amp; Daily Living</option><option>Companionship &amp; Respite Care</option><option>Dementia &amp; Chronic Condition Support</option><option>Hospital-to-Home Recovery</option><option>24-Hour &amp; Overnight Care</option><option>Palliative Care</option><option>Meal Preparation &amp; Feeding</option><option>Household Support &amp; Homemaking</option></select></div>
+          <div class="field"><label for="c-for">Care Is For</label><select id="c-for" name="carefor"><option>Parent</option><option>Spouse / Partner</option><option>Myself</option><option>Other family member</option><option>Client (professional referral)</option></select></div>
+          <div class="field full"><label for="c-msg">How can we help? <span class="req-star">*</span></label><textarea id="c-msg" name="message" required placeholder="Tell us a little about your loved one's needs and preferred schedule."></textarea></div>
+        </div>
+        <div class="split-actions"><button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button></div>
+        <div class="form-success">Thank you! Your email app has opened with your message — press send and we'll be in touch shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="padding-top:0">
+  <div class="container">
+    <div class="map reveal">
+      <iframe title="Suraj Home Care location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=3758%20Weidle%20Cres%20SW%2C%20Edmonton%2C%20AB&amp;z=14&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-sky">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Areas We Serve</span>
+      <h2>Home care across Alberta</h2>
+    </div>
+    <div class="area-tags reveal">
+      <span><i class="fa-solid fa-location-dot"></i> Edmonton</span><span><i class="fa-solid fa-location-dot"></i> St. Albert</span><span><i class="fa-solid fa-location-dot"></i> Sherwood Park</span><span><i class="fa-solid fa-location-dot"></i> Spruce Grove</span><span><i class="fa-solid fa-location-dot"></i> Leduc</span><span><i class="fa-solid fa-location-dot"></i> Beaumont</span><span><i class="fa-solid fa-location-dot"></i> Fort Saskatchewan</span><span><i class="fa-solid fa-location-dot"></i> Stony Plain</span><span><i class="fa-solid fa-location-dot"></i> Calgary</span><span><i class="fa-solid fa-location-dot"></i> Red Deer</span><span><i class="fa-solid fa-location-dot"></i> Surrounding Alberta Communities</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+        <img src="images/logo-icon.svg" alt="Suraj Home Care logo">
+        <span class="brand-text"><strong>SURAJ</strong><small>HOME CARE</small></span>
+      </a>
+      <p>Suraj Home Care Ltd. brings compassionate, professional in-home care to seniors and families across Alberta — helping loved ones live safely and happily at home.</p>
+      <div class="socials">
+        <a href="https://www.tiktok.com/@surajhomecare" target="_blank" rel="noopener" aria-label="Follow us on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="mailto:info@surajhomecare.ca" aria-label="Email us"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+17808132777" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+        <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Our Services</a></li>
+        <li><a href="careers.html"><i class="fa-solid fa-chevron-right"></i> Careers</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Our Services</h4>
+      <ul class="footer-links">
+          <li><a href="services.html#personal-care"><i class="fa-solid fa-chevron-right"></i> Personal Care &amp; Daily Living</a></li>
+          <li><a href="services.html#companionship"><i class="fa-solid fa-chevron-right"></i> Companionship &amp; Respite Care</a></li>
+          <li><a href="services.html#dementia-care"><i class="fa-solid fa-chevron-right"></i> Dementia &amp; Chronic Condition Support</a></li>
+          <li><a href="services.html#hospital-to-home"><i class="fa-solid fa-chevron-right"></i> Hospital-to-Home Recovery</a></li>
+          <li><a href="services.html#overnight-care"><i class="fa-solid fa-chevron-right"></i> 24-Hour &amp; Overnight Care</a></li>
+          <li><a href="services.html#palliative-care"><i class="fa-solid fa-chevron-right"></i> Palliative Care</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get In Touch</h4>
+      <ul class="footer-contact">
+        <li><i class="fa-solid fa-location-dot"></i><span>3758 Weidle Cres SW, Edmonton, AB</span></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+17808132777">780-813-2777</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@surajhomecare.ca">info@surajhomecare.ca</a></li>
+        <li><i class="fa-regular fa-clock"></i><span>Care available 24 hours, 7 days a week</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Suraj Home Care Ltd. All rights reserved.</span>
+      <span>Proudly serving Edmonton &amp; communities across Alberta</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+17808132777" class="float-call" aria-label="Call Suraj Home Care"><i class="fa-solid fa-phone"></i></a>
+<button class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>
